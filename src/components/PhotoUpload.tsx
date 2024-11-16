@@ -28,11 +28,11 @@ const PhotoUpload: React.FC<PhotoUploadProps> = ({ opacity }) => {
         <img
           src={imageUrl}
           alt="Uploaded"
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain bg-transparent"
           style={{ opacity }}
         />
       ) : (
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/5">
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-transparent">
           <label className="cursor-pointer px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors">
             Upload Photo
             <input
