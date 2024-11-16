@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import CameraView from '@/components/CameraView';
+import PhotoUpload from '@/components/PhotoUpload';
 import TransparencyControls from '@/components/TransparencyControls';
 
 const Index = () => {
@@ -7,7 +7,7 @@ const Index = () => {
 
   return (
     <div className="fixed inset-0 bg-black">
-      <CameraView opacity={opacity} />
+      <PhotoUpload opacity={opacity} />
       <TransparencyControls opacity={opacity} setOpacity={setOpacity} />
     </div>
   );
