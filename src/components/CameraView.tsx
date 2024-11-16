@@ -45,7 +45,7 @@ const CameraView: React.FC<CameraViewProps> = ({ opacity }) => {
 
       // Using the standard API for torch/flash control
       await track.applyConstraints({
-        advanced: [{ fillLightMode: flashOn ? 'none' : 'flash' }]
+        advanced: [{ fillLightMode: flashOn ? 'none' : 'flash' }] as any
       });
       
       setFlashOn(!flashOn);
